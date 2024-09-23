@@ -34,9 +34,9 @@ function Signin() {
               <p className="text-orange_primary">Forgot Password?</p>
             </div>
             <div>
-              <button className="text-center w-96 border-gray-500 border-2 rounded-md p-3 my-9">
+              <a href="/" className="text-center w-96 border-gray-500 border-2 rounded-md p-3 my-9">
                 Log In
-              </button>
+              </a>
             </div>
             <div className="flex items-center justify-between">
               <div className="h-0.5 w-1/4 bg-gray-300"></div>
