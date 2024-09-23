@@ -60,13 +60,13 @@ function Menubar() {
       </div>
       <div className="flex items-center gap-8 invisible lg:visible">
         <div>
-          <a href="">Homepage</a>
+          <a href="/home">Homepage</a>
         </div>
         <div>
-          <a href="">About</a>
+          <a href="/about">About</a>
         </div>
         <div className="flex items-center">
-          <a href="">Categories</a>
+          <a href="/categories">Categories</a>
           <RiArrowDropDownLine />
         </div>
         <div className="flex items-center">

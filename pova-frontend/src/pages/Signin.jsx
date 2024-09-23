@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router";
 import siginImage from "../assets/images/signin-vector.png";
 
 function Signin() {
+  const navigate = useNavigate()
   return (
     <div className="flex w-3/4 my-96 mx-auto font-prime_font">
       <div className="w-2/3 bg-custom_gray">
@@ -34,9 +36,9 @@ function Signin() {
               <p className="text-orange_primary">Forgot Password?</p>
             </div>
             <div>
-              <a href="/" className="text-center w-96 border-gray-500 border-2 rounded-md p-3 my-9">
+              <button onClick={()=>navigate('/home')} className="text-center w-96 border-gray-500 border-2 rounded-md p-3 my-9">
                 Log In
-              </a>
+              </button>
             </div>
             <div className="flex items-center justify-between">
               <div className="h-0.5 w-1/4 bg-gray-300"></div>
