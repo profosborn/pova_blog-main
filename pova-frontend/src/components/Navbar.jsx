@@ -24,7 +24,7 @@ function Navbar() {
                         <a href="">Help</a>
                     </li>
                     <li className="mx-8 px-8 py-3 rounded-lg border-white border-4">
-                        <a href="">Get it now</a>
+                        <a href="/signup">Get it now</a>
                     </li>
                    </ul> 
                 </div>

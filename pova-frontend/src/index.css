@@ -100,7 +100,7 @@
 }
 
 .subject-input {
-  @apply border-contact_input w-80 lg:w-5/6 px-7 py-4 border-2 rounded-md
+  @apply border-contact_input w-72 lg:w-5/6 px-7 py-4 border-2 rounded-md
 }
 
 .contact-btn {
@@ -109,5 +109,5 @@
 
 
 .contact-input {
-  @apply border-contact_input py-2 px-7 w-80 md:py-4 md:px-8 border-2 lg:mr-7 rounded-md
+  @apply border-contact_input py-2 px-7 w-72 md:py-4 md:px-8 border-2 lg:mr-7 rounded-md mb-7
 }

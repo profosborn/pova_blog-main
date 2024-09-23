@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Menubar from "../components/Menubar";
 import SocialIcons from "../components/SocialIcons";
@@ -8,7 +9,7 @@ function Contactpage() {
       <div>
         <Menubar />
       </div>
-      <div className=" flex flex-col items-center gap-10">
+      <div className=" flex flex-col items-center gap-10 ">
         <div className="mt-20">
           <p className="font-semibold text-4xl">
             <span className="bg-orange_primary px-2 text-white">Contact</span>{" "}
@@ -27,7 +28,7 @@ function Contactpage() {
                 <input
                   type="Email"
                   placeholder="Email"
-                  className="border-contact_input py-2 px-7 w-80 md:py-4 md:px-8 border-2 rounded-md"
+                  className="border-contact_input py-2 px-7 w-72 md:py-4 md:px-8 border-2 rounded-md"
                 />
               </div>
               <div className="my-5 flex justify-center">
@@ -38,14 +39,11 @@ function Contactpage() {
                 />
               </div>
               <div className="flex justify-center">
-                <textarea
+                <input
+                  type="text"
                   placeholder="Type Your Message"
-                  cols="80"
-                  rows="6"
-                  name=""
-                  id=""
-                  className="border-contact_input pl-8 py-4 border-2 rounded-md"
-                ></textarea>
+                  className="border-contact_input py-4 px-7border-2 rounded-md h-32 w-72"
+                />
               </div>
               <button className="contact-btn">Send message</button>
             </form>

@@ -10,7 +10,7 @@ function SignUp() {
         <div className="flex m-14 justify-end">
           <p className="text-lg">
            Have an account?{" "}
-            <span className="text-orange_primary">Sign in!</span>
+            <a href="/signin" className="text-orange_primary">Sign in!</a>
           </p>
         </div>
         <div className="flex flex-col items-center">
