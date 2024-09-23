@@ -94,3 +94,20 @@
 .faq-icon-two {
   @apply bg-orange_primary w-3 h-0.5
 }
+
+.faq-drop-show {
+  @apply bg-custom_blue_sec px-4
+}
+
+.subject-input {
+  @apply border-contact_input w-80 lg:w-5/6 px-7 py-4 border-2 rounded-md
+}
+
+.contact-btn {
+  @apply bg-orange_primary w-80 mt-4 text-white p-3 rounded-lg
+}
+
+
+.contact-input {
+  @apply border-contact_input py-2 px-7 w-80 md:py-4 md:px-8 border-2 lg:mr-7 rounded-md
+}

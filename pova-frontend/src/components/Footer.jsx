@@ -12,7 +12,7 @@ import SocialIcons from "./SocialIcons";
 function Footer() {
   return (
     <div className="">
-      <div className="pl-16 md:text-left flex flex-col md:flex-row md:justify-evenly  md:items-center md:gap-16">
+      <div className="pl-16 md:pl-12 md:text-left flex flex-col md:flex-row md:justify-evenly  md:items-center md:gap-14">
         <div className="w-52">
           <Logo />
           <p className="my-4">

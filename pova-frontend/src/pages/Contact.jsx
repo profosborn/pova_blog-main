@@ -11,37 +11,59 @@ function Contactpage() {
       <div className=" flex flex-col items-center gap-10">
         <div className="mt-20">
           <p className="font-semibold text-4xl">
-            <span className="bg-orange_primary px-2 text-white">Contact</span> Us
+            <span className="bg-orange_primary px-2 text-white">Contact</span>{" "}
+            Us
           </p>
         </div>
-        <div className="lg:flex mb-28 justify-center">
-          <div className="mx-20">
+        <div className="lg:flex mb-28 lg:flex-row flex flex-col items-center justify-center">
+          <div className="lg:mx-20 my-10">
             <form action="">
-              <div className="flex flex-col lg:flex-row">
-                <input type="text"  placeholder="Name" className="border-contact_input  py-4 px-8 border-2 mb-7 mr-7 rounded-md"/>
-                <input type="Email" placeholder="Email" className="border-contact_input py-4 px-8  border-2 rounded-md"/>
+              <div className="flex flex-col lg:flex-row items-center lg:items-center">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="contact-input"
+                />
+                <input
+                  type="Email"
+                  placeholder="Email"
+                  className="border-contact_input py-2 px-7 w-80 md:py-4 md:px-8 border-2 rounded-md"
+                />
               </div>
-              <div className="my-5 border-contact_input py-4 border-2 rounded-md">
-                <input type="text" className="pl-8" placeholder="Subject" />
+              <div className="my-5 flex justify-center">
+                <input
+                  type="text"
+                  className="subject-input md:pl-2"
+                  placeholder="Subject"
+                />
               </div>
-              <div>
-                <textarea placeholder="Type Your Message" cols="65" rows="8" name="" id="" className="border-contact_input pl-8 py-4 border-2 rounded-md"></textarea>
+              <div className="flex justify-center">
+                <textarea
+                  placeholder="Type Your Message"
+                  cols="80"
+                  rows="6"
+                  name=""
+                  id=""
+                  className="border-contact_input pl-8 py-4 border-2 rounded-md"
+                ></textarea>
               </div>
-              <button className="bg-orange_primary mt-4 text-white p-3 rounded-lg">Send message</button>
+              <button className="contact-btn">Send message</button>
             </form>
           </div>
-          <div className="w-1/4">
-            <p className="mb-16">
+          <div className="w-3/4 md:text-center">
+            <p className="mb-16 md:mb-10">
               Dynamically underwhelm integrated outsourcing via timely models.
               Rapidiously reconceptualize visionary imperatives without.
             </p>
-            <div>
-              <p className="mb-3">info.@pova.com</p>
-              <p className="mb-3">+233000000000</p>
-              <p className="mb-9">Accra, Ghana</p>
-            </div>
-            <div>
-              <SocialIcons/>
+            <div className="md:flex md:gap-20 md:justify-center">
+              <div>
+                <p className="mb-3">info.@pova.com</p>
+                <p className="mb-3">+233000000000</p>
+                <p className="mb-9">Accra, Ghana</p>
+              </div>
+              <div className="">
+                <SocialIcons />
+              </div>
             </div>
           </div>
         </div>
