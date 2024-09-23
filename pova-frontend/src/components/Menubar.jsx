@@ -1,24 +1,30 @@
 import { AiFillEdit, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import Logo from "./Logo";
-import { RiArrowDropDownLine, RiCloseLine, RiEyeCloseLine } from "react-icons/ri";
+import {
+  RiArrowDropDownLine,
+  RiCloseLine,
+  RiEyeCloseLine,
+} from "react-icons/ri";
 import { FaEdit } from "react-icons/fa";
 import MenuLogo from "../assets/images/menu_logo.png";
 import { useState } from "react";
 
 function Menubar() {
-  const [show, setShow] = useState('invisible')
+  const [show, setShow] = useState("invisible");
   return (
-    <div className="flex  items-center bg-custom_blue p-6">
-      <div>
-        <img src={MenuLogo} alt="" width={40} />
-      </div>
-      <div className="lg:invisible">
-        <AiOutlineMenu size={50} onClick={()=>setShow('show')}/>
+    <div className="md:flex bg-custom_blue p-6 h-24">
+      <div className="flex justify-between">
+        <div>
+          <img src={MenuLogo} alt="" width={40} />
+        </div>
+        <div className="lg:invisible">
+          <AiOutlineMenu size={50} onClick={() => setShow("show")} />
+        </div>
       </div>
       <div className={show}>
         <div className="flex flex-col gap-4 my-5">
           <div className="flex justify-end mx-4">
-            <RiCloseLine onClick={()=>setShow('invisible')}/>
+            <RiCloseLine onClick={() => setShow("invisible")} />
           </div>
           <div>
             <a href="">Homepage</a>
