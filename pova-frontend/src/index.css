@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -33,37 +33,41 @@
 }
 
 .general-footer {
-  @apply font-prime_font bg-custom_blue_sec py-20
+  @apply font-prime_font bg-custom_blue_sec py-20;
 }
 
 .l-footer {
-  @apply font-prime_font bg-l_footer py-20 text-gray-300
+  @apply font-prime_font bg-l_footer py-20 text-gray-300;
 }
 
-.soc-media-link{
-  @apply m-4 bg-white px-4 py-2 rounded-md font-semibold
+.soc-media-link {
+  @apply m-4 bg-white px-4 py-2 rounded-md font-semibold;
 }
 
 .soc-media-link:hover {
-  @apply border-orange_primary border-2
+  @apply border-orange_primary border-2;
 }
 
 .catcard {
-  @apply bg-custom_blue w-64 h-40 flex flex-col items-center justify-center pt-5 rounded-md text-orange_primary
+  @apply bg-custom_blue w-64 h-40 flex flex-col items-center justify-center pt-5 rounded-md text-orange_primary;
 }
 
 .catcard p {
-  @apply text-black
+  @apply text-black;
 }
 
 .catcard:hover {
-  @apply bg-orange_primary text-white
+  @apply bg-orange_primary text-white;
 }
 
 .catcard:hover p {
-  @apply text-white
+  @apply text-white;
 }
 
 .social:hover {
-  @apply text-orange_primary
+  @apply text-orange_primary;
+}
+
+.subscribe-btn {
+  @apply bg-orange_primary text-white p-2 rounded-md lg:rounded-none lg:rounded-r lg:w-24 w-56 my-4 lg:my-1;
 }
