@@ -8,7 +8,7 @@ function Signin() {
           <p className="text-xl font-semibold">POVA</p>
           <p className="text-lg">
             Don't have an account?{" "}
-            <span className="text-orange_primary">Sign up!</span>
+            <a href="/signup" className="text-orange_primary">Sign up!</a>
           </p>
         </div>
         <div className="flex flex-col items-center my-60">
