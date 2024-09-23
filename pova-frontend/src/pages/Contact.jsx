@@ -46,7 +46,7 @@ function Contactpage() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="general-footer">
         <Footer />
       </div>
     </div>

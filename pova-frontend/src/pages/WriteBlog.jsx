@@ -1,9 +1,32 @@
 import { FaEdit } from "react-icons/fa";
 import Menubar from "../components/Menubar";
 import Footer from "../components/Footer";
-import { AiOutlineArrowDown, AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import {
+  AiOutlineArrowDown,
+  AiOutlineArrowLeft,
+  AiOutlineArrowRight,
+} from "react-icons/ai";
+import { useState } from "react";
 
 function WriteBlog() {
+  const [read, setRead] = useState("read-more");
+  const [readTwo, setReadTwo] = useState("read-more");
+  const [btnTxt, setBtnTxt] = useState("Read more");
+  const [btnTxtTwo, setBtnTxtTwo] = useState("Read more");
+  const [clickCount, setClickCount] = useState(0);
+
+  const handleClick = (e) => {
+    setClickCount((prevCount) => prevCount + 1);
+
+    if ((clickCount % 2 === 0) & (e.target.name === "btn-one")) {
+      setRead("") & setBtnTxt("close");
+    } else if ((clickCount % 2 === 0) & (e.target.name === "btn-two")) {
+      setReadTwo("") & setBtnTxtTwo("close");
+    } else {
+      e.target.name==='btn-one'?setRead("read-more") & setBtnTxt("Read more"):setReadTwo("read-more") & setBtnTxtTwo("Read more");
+    }
+  };
+
   return (
     <div className="font-prime_font">
       <div>
@@ -44,19 +67,26 @@ function WriteBlog() {
         <div className="bg-orange_primary p-2 text-white text-2xl font-semibold">
           <p>How Can You Earn By Writing On Medium</p>
         </div>
-        <div className="flex w-2/4 text-center mt-10">
-          <div className="">
+        <div className="md:flex w-3/4 text-center mt-10">
+          <div className="mb-8">
             <p className="font-semibold my-5">By Ad Revenue</p>
-            <p>
+            <p className={read}>
               Dynamically underwhelm integrated outsourcing via timely models.
               Rapidiously reconceptualize visionary imperatives without 24/365
               catalysts for change. Completely streamline functionalized models
               and out-of-the-box functionalities.
             </p>
+            <button
+              name="btn-one"
+              onClick={handleClick}
+              className="border-orange_primary border-2 text-orange_primary p-2 rounded-lg"
+            >
+              {btnTxt}
+            </button>
           </div>
           <div className="mx-5">
             <p className="font-semibold my-5">By Affiliate Programme</p>
-            <p>
+            <p className={readTwo}>
               Dynamically underwhelm integrated outsourcing via timely models.
               Rapidiously reconceptualize visionary imperatives without 24/365
               catalysts for change. Completely streamline functionalized models
@@ -64,17 +94,26 @@ function WriteBlog() {
               proactive vortals vis-a-vis exceptional results. Compellingly
               brand.
             </p>
+            <button
+              name="btn-two"
+              onClick={handleClick}
+              className="border-orange_primary border-2 text-orange_primary p-2 rounded-lg"
+            >
+              {btnTxtTwo}
+            </button>
           </div>
         </div>
         <div className="my-20 text-center">
           <p className="mb-4 font-semibold text-xl">Want To Know More?</p>
           <div className="flex items-center justify-center text-orange_primary">
-            <a href="" className="mx-1">Go To FAQ Page</a>
-            <AiOutlineArrowRight/>
+            <a href="" className="mx-1">
+              Go To FAQ Page
+            </a>
+            <AiOutlineArrowRight />
           </div>
         </div>
       </div>
-      <div>
+      <div className="general-footer">
         <Footer />
       </div>
     </div>

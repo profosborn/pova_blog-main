@@ -12,14 +12,14 @@ import SocialIcons from "./SocialIcons";
 function Footer() {
   return (
     <div className="">
-      <div className="md:text-left text-center flex flex-col md:flex-row md:justify-evenly justify-center items-center">
-        <div className="w-52 flex flex-col items-center  md:items-start">
+      <div className="pl-16 md:text-left flex flex-col md:flex-row md:justify-evenly  md:items-center md:gap-16">
+        <div className="w-52">
           <Logo />
           <p className="my-4">
             Did you come here for something in particular or just general Riker
           </p>
         </div>
-        <div className="my-4">
+        <div className="my-4 md:my-0">
           <h4 className="font-semibold">Blogs</h4>
           <div className="text-gray-400 flex flex-col">
             <a href="" className="my-1">
@@ -39,7 +39,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="my-4">
+        <div className="my-4 md:my-0">
           <h4 className="font-semibold">Quicks Links</h4>
           <div className="flex flex-col text-gray-400">
             <a href="" className="my-1">
@@ -56,17 +56,17 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col mx-4">
+        <div className="flex flex-col md:mx-4">
           <h4 className="font-semibold">Subscribe For Newsletter</h4>
-          <div className="mt-4">
+          <div className="mt-4 lg:flex">
             <form action="">
-              <input type="email" placeholder="Your Email" className="bg-cyan-100 rounded lg:rounded-l p-2" />
+              <input type="email" placeholder="Your Email" className="bg-cyan-100 rounded lg:rounded-l p-2 lg:w-40" />
               <button className="subscribe-btn">
                 Subscribe
               </button>
             </form>
           </div>
-          <div className="my-5 flex items-center justify-center md:items-start md:justify-start">
+          <div className="my-5 flex md:items-start md:justify-start">
             <div className="">
               <SocialIcons />
             </div>

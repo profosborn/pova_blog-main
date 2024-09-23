@@ -44,7 +44,7 @@ function AboutAuthor() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="general-footer">
         <Footer />
       </div>
     </div>

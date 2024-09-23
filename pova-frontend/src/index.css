@@ -75,3 +75,7 @@
 .show {
   @apply left-0 top-0 mx-0 w-52 lg:invisible absolute bg-cyan-100 text-left h-fit px-4;
 }
+
+.read-more {
+  @apply overflow-hidden h-20 mb-8
+}

@@ -12,7 +12,7 @@ import { useState } from "react";
 function Menubar() {
   const [show, setShow] = useState("invisible");
   return (
-    <div className="md:flex bg-custom_blue p-6 h-24">
+    <div className="md:flex bg-custom_blue p-6 h-24 lg:items-center">
       <div className="flex justify-between">
         <div>
           <img src={MenuLogo} alt="" width={40} />
@@ -65,7 +65,7 @@ function Menubar() {
         <div>
           <a href="">About</a>
         </div>
-        <div className="flex m-3 items-center">
+        <div className="flex items-center">
           <a href="">Categories</a>
           <RiArrowDropDownLine />
         </div>
@@ -74,7 +74,7 @@ function Menubar() {
           <RiArrowDropDownLine />
         </div>
       </div>
-      <div className="mx-2 invisible lg:visible">
+      <div className="mx-2 invisible lg:mx-16 lg:visible">
         <Logo />
       </div>
       <div className="flex gap-5 items-center invisible lg:visible">
