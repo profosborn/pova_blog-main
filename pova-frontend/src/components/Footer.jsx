@@ -12,14 +12,14 @@ import SocialIcons from "./SocialIcons";
 function Footer() {
   return (
     <div className="">
-      <div className="flex justify-evenly">
-        <div className="w-52">
+      <div className="text-center flex flex-col md:flex-row lg:justify-evenly justify-center items-center">
+        <div className="w-52 text-center flex flex-col items-center md:flex-row md:items-start">
           <Logo />
           <p className="my-4">
             Did you come here for something in particular or just general Riker
           </p>
         </div>
-        <div>
+        <div className="my-6">
           <h4 className="font-semibold">Blogs</h4>
           <div className="text-gray-400 flex flex-col">
             <a href="" className="my-1">
@@ -39,7 +39,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="my-6">
           <h4 className="font-semibold">Quicks Links</h4>
           <div className="flex flex-col text-gray-400">
             <a href="" className="my-1">
@@ -56,12 +56,12 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mx-4">
           <h4 className="font-semibold">Subscribe For Newsletter</h4>
           <div className="mt-6">
             <form action="">
-              <input type="email" placeholder="Your Email" className="bg-cyan-100 rounded-l p-2" />
-              <button className="bg-orange_primary text-white p-2 rounded-r w-24">
+              <input type="email" placeholder="Your Email" className="bg-cyan-100 rounded lg:rounded-l p-2" />
+              <button className="bg-orange_primary text-white p-2 lg:rounded-r rounded-md lg:w-24 w-56 my-4">
                 Subscribe
               </button>
             </form>
