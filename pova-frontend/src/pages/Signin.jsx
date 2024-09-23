@@ -4,7 +4,7 @@ import siginImage from "../assets/images/signin-vector.png";
 function Signin() {
   const navigate = useNavigate()
   return (
-    <div className="flex w-3/4 my-96 mx-auto font-prime_font">
+    <div className="flex w-3/4 p-0 static mx-auto font-prime_font">
       <div className="w-2/3 bg-custom_gray">
         <div className="flex justify-between m-14">
           <p className="text-xl font-semibold">POVA</p>
@@ -13,7 +13,7 @@ function Signin() {
             <a href="/signup" className="text-orange_primary">Sign up!</a>
           </p>
         </div>
-        <div className="flex flex-col items-center my-60">
+        <div className="flex flex-col items-center  h-60">
           <div className="text-center">
             <p className="text-4xl font-semibold">Welcome Back</p>
             <p className="font-medium my-1">Login into your acount</p>

@@ -84,7 +84,7 @@ function Menubar() {
         <div>
           <FaEdit />
         </div>
-        <div>Contact</div>
+        <div><a href="/contact">Contact</a></div>
         <div className="flex items-center">
           <p>En</p>
           <RiArrowDropDownLine />
