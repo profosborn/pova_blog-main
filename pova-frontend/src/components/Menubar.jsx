@@ -3,20 +3,22 @@ import Logo from "./Logo";
 import { RiArrowDropDownLine, RiCloseLine, RiEyeCloseLine } from "react-icons/ri";
 import { FaEdit } from "react-icons/fa";
 import MenuLogo from "../assets/images/menu_logo.png";
+import { useState } from "react";
 
 function Menubar() {
+  const [show, setShow] = useState('invisible')
   return (
     <div className="flex  items-center bg-custom_blue p-6">
       <div>
         <img src={MenuLogo} alt="" width={40} />
       </div>
       <div className="lg:invisible">
-        <AiOutlineMenu size={50} />
+        <AiOutlineMenu size={50} onClick={()=>setShow('show')}/>
       </div>
-      <div className="sideMenu left-0 top-0 mx-0 w-52 lg:invisible absolute bg-cyan-100 text-left h-fit px-4">
+      <div className={show}>
         <div className="flex flex-col gap-4 my-5">
           <div className="flex justify-end mx-4">
-            <RiCloseLine/>
+            <RiCloseLine onClick={()=>setShow('invisible')}/>
           </div>
           <div>
             <a href="">Homepage</a>

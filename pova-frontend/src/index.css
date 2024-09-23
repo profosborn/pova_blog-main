@@ -71,3 +71,7 @@
 .subscribe-btn {
   @apply bg-orange_primary text-white p-2 rounded-md lg:rounded-none lg:rounded-r lg:w-24 w-56 my-4 lg:my-1;
 }
+
+.show {
+  @apply left-0 top-0 mx-0 w-52 lg:invisible absolute bg-cyan-100 text-left h-fit px-4;
+}
