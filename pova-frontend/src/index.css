@@ -79,3 +79,18 @@
 .read-more {
   @apply overflow-hidden h-20 mb-8
 }
+
+.faq-heading {
+  @apply  mx-4 my-8 bg-orange_primary p-2 text-white text-xl  font-semibold text-center
+}
+
+/* hover:scale-150 */
+.faq-icon {
+  @apply bg-orange_primary w-3 h-0.5 rotate-90 translate-x-3
+}
+.faq-icon-b {
+  @apply bg-orange_primary w-3 h-0.5 rotate-180
+}
+.faq-icon-two {
+  @apply bg-orange_primary w-3 h-0.5
+}
