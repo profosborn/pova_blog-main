@@ -19,7 +19,7 @@ function Contactpage() {
         <div className="lg:flex mb-28 lg:flex-row flex flex-col items-center justify-center">
           <div className="lg:mx-20 my-10">
             <form action="">
-              <div className="flex flex-col lg:flex-row items-center lg:items-center">
+              <div className="flex flex-col lg:flex-row lg:justify-center items-center lg:items-center">
                 <input
                   type="text"
                   placeholder="Name"
@@ -28,7 +28,7 @@ function Contactpage() {
                 <input
                   type="Email"
                   placeholder="Email"
-                  className="border-contact_input py-2 px-7 w-72 md:py-4 md:px-8 border-2 rounded-md"
+                  className="border-contact_input py-2 px-7 w-72 md:py-4 md:px-8 border-2 rounded-md mb-7"
                 />
               </div>
               <div className="my-5 flex justify-center">
@@ -42,7 +42,7 @@ function Contactpage() {
                 <input
                   type="text"
                   placeholder="Type Your Message"
-                  className="border-contact_input py-4 px-7border-2 rounded-md h-32 w-72"
+                  className="border-contact_input py-4 px-7 border-2 rounded-md h-32 w-72 lg:w-full"
                 />
               </div>
               <button className="contact-btn">Send message</button>
